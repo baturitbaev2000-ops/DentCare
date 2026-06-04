@@ -1,0 +1,109 @@
+.hero-slider-wrap {
+  margin-top: 64px; /* navbar height */
+}
+
+.hero-slide {
+  position: relative;
+  min-height: 560px;
+  display: flex !important;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 640px;
+  padding: 60px;
+  color: #fff;
+}
+
+.hero-emoji {
+  font-size: 3.5rem;
+  margin-bottom: 16px;
+  animation: floatEmoji 3s ease-in-out infinite;
+}
+@keyframes floatEmoji {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.hero-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: #fff;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: rgba(255,255,255,0.9);
+  margin-bottom: 28px;
+  max-width: 480px;
+}
+
+.hero-cta {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--primary) !important;
+  padding: 14px 32px;
+  border-radius: 50px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.hero-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.25);
+}
+
+.hero-decoration {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  pointer-events: none;
+}
+.deco-circle {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.07);
+}
+.c1 { width: 400px; height: 400px; right: -100px; top: -100px; }
+.c2 { width: 250px; height: 250px; right: 150px; bottom: -80px; }
+.c3 { width: 150px; height: 150px; right: 50px; top: 60px; background: rgba(255,255,255,0.04); }
+
+/* Slick arrow overrides */
+.hero-slider-wrap .slick-prev,
+.hero-slider-wrap .slick-next {
+  z-index: 10;
+  width: 44px;
+  height: 44px;
+}
+.hero-slider-wrap .slick-prev { left: 20px; }
+.hero-slider-wrap .slick-next { right: 20px; }
+.hero-slider-wrap .slick-prev:before,
+.hero-slider-wrap .slick-next:before {
+  font-size: 32px;
+  color: rgba(255,255,255,0.8);
+}
+
+.hero-slider-wrap .slick-dots {
+  bottom: 20px;
+}
+.hero-slider-wrap .slick-dots li button:before {
+  color: rgba(255,255,255,0.7);
+  font-size: 12px;
+}
+.hero-slider-wrap .slick-dots li.slick-active button:before {
+  color: #fff;
+}
+
+@media (max-width: 576px) {
+  .hero-slide { min-height: 400px; }
+  .hero-content { padding: 40px 24px; }
+  .hero-emoji { font-size: 2.5rem; }
+}

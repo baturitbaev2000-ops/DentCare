@@ -1,0 +1,69 @@
+.contacts-hero {
+  background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%);
+  padding: 60px 0 50px;
+}
+
+.contact-info-card {
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 36px;
+  height: 100%;
+}
+.contact-info-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  color: var(--dark);
+  margin-bottom: 24px;
+}
+.contact-info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+.contact-info-icon {
+  color: var(--primary);
+  font-size: 1.2rem;
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+.contact-info-item strong { display: block; font-weight: 600; color: var(--dark); margin-bottom: 2px; }
+.contact-info-item p { margin: 0; color: var(--gray); font-size: 0.9rem; }
+.contact-info-item a { color: var(--primary); }
+
+.hours-table { margin-top: 20px; margin-bottom: 20px; }
+.hours-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+.hours-table table { border-collapse: collapse; }
+.hours-table td {
+  padding: 5px 0;
+  font-size: 0.88rem;
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+}
+.hours-table tr.day-off td { color: var(--gray); }
+
+.contact-socials { display: flex; gap: 10px; }
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  color: #fff;
+  transition: transform 0.2s, opacity 0.2s;
+}
+.social-icon:hover { transform: translateY(-2px); opacity: 0.85; color: #fff; }
+.instagram { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+.whatsapp { background: #25D366; }
+.telegram { background: #0088cc; }
+
+.bg-light-section-pad { background: var(--light-bg); padding: 80px 0; }

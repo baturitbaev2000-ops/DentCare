@@ -1,0 +1,25 @@
+.notfound-page {
+  min-height: calc(100vh - 120px);
+  display: flex;
+  align-items: center;
+}
+.notfound-emoji { font-size: 4rem; margin-bottom: 16px; }
+.notfound-code {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 6rem;
+  color: var(--primary);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.notfound-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: var(--dark);
+  margin-bottom: 12px;
+}
+.notfound-text {
+  color: var(--gray);
+  margin-bottom: 28px;
+}

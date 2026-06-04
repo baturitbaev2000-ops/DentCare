@@ -1,0 +1,73 @@
+.bg-light-section { background: var(--light-bg); }
+
+.adv-card {
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 32px 20px;
+  box-shadow: var(--shadow);
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+.adv-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+.adv-icon { font-size: 2.8rem; margin-bottom: 14px; }
+.adv-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  color: var(--dark);
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+.adv-text { font-size: 0.88rem; color: var(--gray); line-height: 1.6; }
+
+.review-card {
+  border: 1px solid var(--border) !important;
+  padding: 8px;
+}
+.review-stars { margin-bottom: 12px; }
+.review-stars .star { color: #F59E0B; font-size: 1rem; }
+.review-text {
+  font-style: italic;
+  color: var(--text);
+  font-size: 0.92rem;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+.review-author { display: flex; align-items: center; gap: 10px; }
+.review-avatar {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+.review-name { font-weight: 600; color: var(--dark); font-size: 0.9rem; }
+
+.cta-section {
+  background: linear-gradient(135deg, var(--dark) 0%, var(--primary) 100%);
+  padding: 80px 0;
+}
+.cta-inner { max-width: 700px; margin: 0 auto; }
+.cta-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  color: #fff;
+  margin-bottom: 16px;
+}
+.cta-text { color: rgba(255,255,255,0.8); font-size: 1.05rem; margin-bottom: 32px; }
+.cta-btn {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--primary) !important;
+  padding: 14px 40px;
+  border-radius: 50px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}
+.cta-btn:hover { transform: translateY(-2px); }
+
+.doctors-slider .slick-slide { padding: 4px 0; }
+.reviews-slider .slick-slide { padding: 4px 0; }

@@ -1,0 +1,92 @@
+.page-top { padding-top: 64px; }
+
+.page-hero {
+  background: linear-gradient(135deg, var(--dark) 0%, var(--primary) 100%);
+  padding: 60px 0 50px;
+  color: #fff;
+}
+.page-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  color: #fff;
+  margin-bottom: 8px;
+}
+.page-subtitle { color: rgba(255,255,255,0.8); font-size: 1.05rem; }
+
+.custom-breadcrumb .breadcrumb-item a { color: rgba(255,255,255,0.7); }
+.custom-breadcrumb .breadcrumb-item.active { color: rgba(255,255,255,0.5); }
+.custom-breadcrumb .breadcrumb-item + .breadcrumb-item::before { color: rgba(255,255,255,0.4); }
+
+.clinic-image-placeholder {
+  background: linear-gradient(135deg, var(--light-bg), #d6eaf8);
+  border-radius: 16px;
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed var(--primary);
+}
+.clinic-image-inner {
+  text-align: center;
+  color: var(--primary);
+}
+.clinic-image-inner span { font-size: 4rem; display: block; margin-bottom: 12px; }
+.clinic-image-inner p { font-family: 'Raleway', sans-serif; font-weight: 700; font-size: 1.2rem; margin: 0; }
+.clinic-image-inner small { color: var(--gray); }
+
+.stats-section {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  padding: 60px 0;
+}
+.stat-card { color: #fff; }
+.stat-value {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.stat-label { font-size: 1rem; opacity: 0.85; }
+
+.team-card { border: 1px solid var(--border) !important; }
+.team-avatar {
+  width: 80px; height: 80px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; font-family: 'Raleway', sans-serif;
+  font-weight: 800; font-size: 1.4rem;
+  margin: 0 auto 14px;
+}
+.team-name { font-family: 'Raleway', sans-serif; font-weight: 700; color: var(--dark); margin-bottom: 4px; }
+.team-role { color: var(--primary); font-size: 0.88rem; font-weight: 600; margin-bottom: 4px; }
+.team-specialty { color: var(--gray); font-size: 0.85rem; margin-bottom: 12px; }
+.team-meta { display: flex; flex-direction: column; gap: 4px; font-size: 0.8rem; color: var(--gray); }
+
+.bg-light-section-pad { background: var(--light-bg); padding: 80px 0; }
+
+.cert-card { border: 1px solid var(--border) !important; }
+.cert-icon { font-size: 2rem; margin-bottom: 8px; }
+.cert-name { font-size: 0.78rem; color: var(--text); font-weight: 500; }
+
+.partners-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+.partner-logo {
+  padding: 16px 28px;
+  background: var(--light-bg);
+  border-radius: 10px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  color: var(--primary);
+  border: 1px solid var(--border);
+  font-size: 0.95rem;
+  transition: all 0.2s;
+}
+.partner-logo:hover {
+  background: var(--primary);
+  color: #fff;
+  transform: translateY(-2px);
+}

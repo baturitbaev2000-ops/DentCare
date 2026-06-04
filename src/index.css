@@ -1,0 +1,159 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'slick-carousel/slick/slick.css';
+@import 'slick-carousel/slick/slick-theme.css';
+
+:root {
+  --primary: #1A6FAF;
+  --primary-dark: #135890;
+  --secondary: #4CBAB0;
+  --dark: #1E2A3A;
+  --light-bg: #F0F7FF;
+  --text: #2D3748;
+  --white: #FFFFFF;
+  --gray: #6B7280;
+  --border: #E5E7EB;
+  --shadow: 0 4px 24px rgba(26, 111, 175, 0.10);
+  --shadow-hover: 0 8px 32px rgba(26, 111, 175, 0.18);
+  --radius: 12px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--text);
+  background: var(--white);
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  color: var(--dark);
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover { color: var(--primary-dark); }
+
+.btn-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 10px 24px;
+  transition: all 0.25s;
+}
+.btn-primary:hover {
+  background: var(--primary-dark);
+  border-color: var(--primary-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(26,111,175,0.3);
+}
+.btn-outline-primary {
+  border-color: var(--primary);
+  color: var(--primary);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 10px 24px;
+  transition: all 0.25s;
+}
+.btn-outline-primary:hover {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-secondary {
+  background: var(--secondary);
+  border-color: var(--secondary);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 10px 24px;
+  color: #fff;
+}
+.btn-secondary:hover {
+  background: #3aa59b;
+  border-color: #3aa59b;
+  color: #fff;
+}
+
+.section-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  color: var(--dark);
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+.section-title::after {
+  content: '';
+  display: block;
+  width: 56px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  border-radius: 2px;
+  margin-top: 10px;
+}
+.section-title.text-center::after {
+  margin: 10px auto 0;
+}
+
+.section-subtitle {
+  color: var(--gray);
+  font-size: 1.05rem;
+  margin-bottom: 2.5rem;
+}
+
+.card {
+  border: none;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+
+.slick-dots li button:before {
+  color: var(--primary);
+  font-size: 10px;
+}
+.slick-dots li.slick-active button:before {
+  color: var(--primary);
+}
+
+.badge {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 0.75rem;
+  border-radius: 6px;
+  padding: 5px 10px;
+}
+
+section {
+  padding: 80px 0;
+}
+
+
+html { scroll-behavior: smooth; }
+
+
+.page-enter {
+  opacity: 0;
+  transform: translateY(12px);
+}
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.35s, transform 0.35s;
+}
